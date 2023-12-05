@@ -107,7 +107,7 @@ body {
   transform: translate(-50%, -50%);
   padding-left: 52px;
   padding-right: 52px;
-  padding-top: 115px;
+  padding-top: 65px;
 }
 
 h1 {
@@ -189,6 +189,8 @@ hr {
 
   margin-top: 10px;
   margin-right: 2px;
+  margin-left: 1px;
+  margin-bottom: 10px;
 }
 
 .bot {
@@ -237,6 +239,48 @@ hr {
   margin-top: 10px;
 }
 
+.button-mobile {
+  display: none;
+  justify-content: center;
+  gap: 130px;
+}
+
+.button-mobile1 {
+  width: 100px;
+  height: 45px;
+  flex-shrink: 0;
+  text-align: center;
+
+  background: var(--clr-copy-color);
+  color: var(--clr-secondary-grey);
+
+  font-family: var(--ff-accent);
+  border: none;
+  border-radius: 100px;
+}
+
+.button-mobile1:hover {
+  background: var(--clr-copy-green);
+}
+
+.button-mobile2 {
+  width: 100px;
+  height: 45px;
+  flex-shrink: 0;
+  text-align: center;
+
+  background: var(--clr-copy-color);
+  color: var(--clr-secondary-grey);
+
+  font-family: var(--ff-accent);
+  border: none;
+  border-radius: 100px;
+}
+
+.button-mobile2:hover {
+  background: var(--clr-copy-green);
+}
+
 /* COPIED! msg */
 
 .copied-msg1 {
@@ -255,7 +299,30 @@ hr {
     transform: scale(0.65);
   }
 
-  svg {
-    transform: none;
+  #copy-text-btn1 {
+    display: none;
+  }
+
+  #copy-text-btn2 {
+    display: none;
+  }
+
+  .password {
+    width: 212px;
+    margin-right: 0px;
+  }
+
+  .bot {
+    gap: 20px;
+  }
+
+  .button-mobile {
+    display: flex;
+  }
+}
+
+@media (max-width: 380px) {
+  body {
+    transform: scale(0.6);
   }
 }
