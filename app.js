@@ -139,3 +139,10 @@ document.querySelector("#copy-text-btn1").onclick = function () {
 document.querySelector("#copy-text-btn2").onclick = function () {
   copyText(document.querySelector("#password-2"));
 };
+
+document.querySelector(".button-mobile1").onclick = function () {
+  copyText(document.querySelector("#password-1"));
+};
+document.querySelector(".button-mobile2").onclick = function () {
+  copyText(document.querySelector("#password-2"));
+};
