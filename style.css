@@ -320,6 +320,9 @@ hr {
 @media (max-width: 600px) {
   body {
     transform: scale(0.65);
+
+  svg {
+    transform: scale(1);
   }
 }
 
